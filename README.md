@@ -2,4 +2,6 @@
 + 姓名 : 徐敏皓
 + 系級 : 科技114
 # Practice
++ [bs](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/bs.py)
+
 # Final project
