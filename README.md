@@ -10,3 +10,4 @@
 # Homework
 + [my crawer](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/homework/41071102h.py)
 # Final project
++ [final project](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/final%20project/%E6%96%87%E6%9C%AC%E7%88%AC%E8%9F%B2/FinalProject.py)
