@@ -11,3 +11,4 @@
 + [my crawer](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/homework/41071102h.py)
 # Final project
 + [final project](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/final%20project/%E6%96%87%E6%9C%AC%E7%88%AC%E8%9F%B2/FinalProject.py)
++ [書面](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/final%20project/%E6%96%87%E6%9C%AC%E5%88%86%E6%9E%90%E6%9C%9F%E6%9C%AB%E6%9B%B8%E9%9D%A2%E5%A0%B1%E5%91%8A.pdf)
