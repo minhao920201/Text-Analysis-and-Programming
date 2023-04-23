@@ -3,5 +3,5 @@
 + 系級 : 科技114
 # Practice
 + [bs](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/bs.py)
-
++ [bsb](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/bsb.py)
 # Final project
