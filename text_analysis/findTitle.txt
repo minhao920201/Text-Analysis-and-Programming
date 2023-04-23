@@ -1,0 +1,196 @@
+網址:https://ithelp.ithome.com.tw/questions/10208888
+
+請使用者輸入姓名與各科成績，
+以建立成績資料。輸入完畢後-1跳出，
+並利用DataFrame列印你輸入的成績。
+
+網址:https://ithelp.ithome.com.tw/questions/10208887
+
+首先感謝點進來的各位大大們，這是小弟我第一次在此發問，排版較差，還請大家耐心看完。
+問題:
+目前正在學習如何使用多輸入模型，但遇到的這個問題在網路上找了許久卻找不到解決方法。
+這是本該input進去的資料:
+訓練資料1: origin: 5 classes, 150 images
+訓練資料2: entropy: 5 classes, 150 images
+驗證資料1: origin: 5 classes, 150 images
+驗證資料2: entropy: 5 classes, 150 images
+也就是說本來預期會得到以下這樣的結果
+Found 150 images belonging to 5 classes.
+Found 150 images belonging to 5 classes.
+Found 150 images belonging to 5 classes.
+Found 150 images belonging to 5 classes.
+但卻只出現以下結果
+Found 150 images belonging to 5 classes.
+Found 150 images belonging to 5 classes.
+檢查後發現只有訓練資料1: origin 和驗證資料1: origin 被抓進去，請問各位大大該如何解決此問題?
+以下為程式碼
+train_gen = ImageDataGenerator()
+test_gen = ImageDataGenerator()
+def generate_generator_multiple(generator, dir1, dir2, batch_size, img_rows, img_cols):
+genX1 = generator.flow_from_directory(
+                            dir1,
+                            target_size = (img_rows, img_cols),
+                            #target_size = (64, 64),
+                            # 遵照論文所示，將batch_size 設定為8
+                            batch_size = batch_size,
+                            #shuffle=False,
+                            class_mode = 'categorical',
+                            seed=666
+                            )
+
+genX2 = generator.flow_from_directory(
+                            dir2,
+                            target_size = (img_rows, img_cols),
+                            #target_size = (64, 64),
+                            # 遵照論文所示，將batch_size 設定為8
+                            batch_size = batch_size,
+                            #shuffle=False,
+                            class_mode = 'categorical',
+                            seed=666
+                            )
+
+while True:
+        X1i = genX1.next()
+        X2i = genX2.next()
+        yield [X1i[0], X2i[0]], X2i[1]  #Yield both images and their mutual label
+                   
+
+inputgenerator = generate_generator_multiple(
+generator=train_gen,
+dir1=train_origin_dir,
+dir2=train_entropy_dir,
+batch_size=batch_size,
+img_rows=img_rows,
+img_cols=img_cols
+)
+testgenerator = generate_generator_multiple(
+generator=test_gen,
+dir1=test_origin_dir,
+dir2=test_entropy_dir,
+batch_size=batch_size,
+img_rows=img_rows,
+img_cols=img_cols
+)
+---- 中間為神經網路的架構----
+history = model.fit(
+inputgenerator,
+steps_per_epoch = trainsetsize/batch_size,
+validation_data = testgenerator,
+validation_steps = testsetsize/batch_size,
+epochs = epochs,
+callbacks = callbacks_list,
+verbose = 2
+)
+只出現
+Found 150 images belonging to 5 classes.
+Found 150 images belonging to 5 classes.
+Epoch 1/1000
+
+網址:https://ithelp.ithome.com.tw/questions/10208877
+
+我是位學生，在建立ARMA中遇到一些問題，已經有問過老師，老師沒辦法解決這個問題，也找過網路但還是不行，所以上來尋求幫忙。
+在我的電腦上打了以下的程式碼之後出現錯誤，程式碼是從老師那邊複製下來的，在老師的電腦上沒有出現NotImplementedError
+程式碼:
+from statsmodels.tsa import arima_model
+model1=arima_model.ARIMA(CPItrain,order=(1,0,1)).fit()
+model1.summary()
+出來結果:
+NotImplementedError:
+statsmodels.tsa.arima_model.ARMA and statsmodels.tsa.arima_model.ARIMA have
+been removed in favor of statsmodels.tsa.arima.model.ARIMA (note the .
+between arima and model) and statsmodels.tsa.SARIMAX.
+statsmodels.tsa.arima.model.ARIMA makes use of the statespace framework and
+is both well tested and maintained. It also offers alternative specialized
+parameter estimators.
+
+=> 有想過是不是程式的問題，所以重新下載anaconda，重新下載後還是有出現錯誤。
+=> 上網找，把程式碼修改後
+程式碼:
+import statsmodels.api as sm
+model1 = sm.tsa.arima.ARIMA(CPItrain, order=(1,0,1)).fit()
+model1.summary()
+
+但出來的不是ARMA Model Results 是 SARIMAX Results ，也有進行程式碼的其他修改，但最後出來的不是NotImplementedError，就是 SARIMAX 的圖。
+=>有嘗試再次安裝statsmodels，但也還是有一樣的問題出現。
+想請問有甚麼解決方法能讓ARMA Model Results出來，而不是出現錯誤或是SARIMAX。
+謝謝
+
+網址:https://ithelp.ithome.com.tw/questions/10208874
+
+目前在練習四則運算，我想自己寫判斷，不使用eval()來操作，
+我的解題想法是把運算式子用陣列表達，最後會是多層陣列。
+
+x="2*9*3+5*8/2+60*10/5/1"
+#經過我的split之後會變成以下:
+x=[[['2'], ['9'], '3'], [['5'], ['8', '2']], [['60'], ['10', '5', '1']]]
+#我是先分割加減，然後才是乘法，最後是除法
+
+接下來我就知道answer=x[0]+x[1]+x[2]，因為第一次分割是加法。
+所以要處理這三項，而每一項裡面的值是相乘：
+x[0]=x[0][0]*x[0][1]*x[0][2]
+x[1]=x[1][0]*x[1][1]
+
+以此類推
+最後要處理除法就會像是這樣
+
+x[2][1]=x[2][1][0]/x[2][1][1]/x[2][1][2]
+
+思考方向講完了，接下來是操作，我試圖用一個函式去丟出某陣列的所有項，
+但我不知道該如何把所有項拿來運作乘除。
+def AllofArr(test):
+    for i in range(len(test)):
+        if type(test[i])==list:
+            return AllofArr(test[i])
+        print(test[i],end="")#這裡我只能把項都丟出來 實際上我想要讓他們運算
+
+
+後來我想到物件導向與類別之類的觀念，試圖建立一個class
+
+class Book:
+    def __init__(self,one,two,three,long):
+        self.one=one
+        self.two=two
+        self.three=three
+        self.long=long
+    
+    #我想讓某陣列裡面的所有值存起來，目前先操作三項而已
+def SaveValue(A):
+    if len(A)==3:
+        s=Book(A[0],A[1],A[2],3)
+    
+    if len(A)==2:
+        s=Book(A[0],A[1],'null',2)
+    
+    if len(A)==1:
+        s=Book(A[0],'null','null',1)
+    return s
+
+
+#這個是想要call出某一項的值的函式
+def One(A):
+    q=SaveValue(A).one
+    return q
+
+def Two(A):
+    q=SaveValue(A).two
+    return q
+ 
+def SaveValue(A):
+    q=SaveValue(A).three
+    return q
+
+目前寫到這邊，整體好像已經到一個極限了，不知道該如何操作下去。
+我希望能依照我的最初思路去解，
+似乎還差遞迴或是一個漂亮的迴圈，因為我知道我這種想法勢必會面對以下的code：
+One(One(Three(One(x))))
+
+One(One(One(x)))
+Two(Two(One(x)))
+One(Three(One(x)))
+
+這種東西……
+對於這題，我有看到有人提出DFS與BFS的演算法，我想知道跟我的作法是否有類似？
+稍微去看了教學影片，感覺是很棒的東西，
+但在自己的code中不太知道如何運用。
+想問如果要用我這種處理陣列的方式解題，該怎麼把它寫完？
+
