@@ -6,4 +6,5 @@
 + [bsb](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/bsb.py)
 + [crawer](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/crawer.py)
 + [crawerurllib](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/crawerurllib.py)
++ [req](https://github.com/minhao920201/Text-Analysis-and-Programming/blob/main/crawer/req.py)
 # Final project
