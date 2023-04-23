@@ -1,0 +1,1691 @@
+https://ithelp.ithome.com.tw/questions/10208842
+Python 超新手-next()
+
+各位大大, 想請教一下為什麼以下
+print(next(multi_yield()))和你print(next(multi_obj))結果會不一樣？謝謝??
+def multi_yield():
+yield_str = ‘first string’
+yield yield_str
+yield_str = ‘second string’
+yield yield_str
+multi_obj = multi_yield()
+print(next(multi_obj))
+#output: first string
+print(next(multi_obj))
+#output:second string
+p rint(next(multi_yield()))
+#output: first string
+p rint(next(multi_yield()))
+#output: second string
+
+https://ithelp.ithome.com.tw/questions/10208841
+Python安裝後無法執行Message: session not created exception: Missing or invalid capabilities
+
+照著網路上的教學安裝了Python和selenium
+皆有顯示安裝完成的字樣
+但當要執行程式時，一直跑出
+【exited with code=1】以及【Message: session not created exception: Missing or invalid capabilities】
+照了網路上的方式，檢查檔案和修改，還是無法執行
+想請問有前輩知道這能怎麼解決嗎...?非常感謝
+
+https://ithelp.ithome.com.tw/questions/10208840
+LINQ指令的問題請教?
+
+最近在自學MSSQL的LINQ，利用北風資料庫(NorthWind)做練習。
+目前遇到這兩個問題，不太懂是要使用in還是inner join和grouo by，對題目的提意感到很抽象 @@，也常是很久還是想不出來要怎麼寫，才來發問。
+想請教各位前輩，要用LINQ寫出來，是要怎麼寫才對??
+感謝感謝
+1.先查詢客戶資料中，Country為USA，然後再依名稱去訂單主檔(Orders)中找出這些客戶的訂單編號及日期.
+Table  : Customers、Orders
+
+
+
+2.訂單中各自購買產品代號(ProductID)最多次的客戶CustomerID，列出客戶CustomerID及產品代號(ProductID)是誰?
+Tabel：Orders、Order Details
+
+
+3.訂單中單價(UnitPrice)數量(Quantity)的總消費額最多的前10名的客戶CustomerID及總消費額欄位
+Table:Orders、Order Details
+
+
+
+https://ithelp.ithome.com.tw/questions/10208839
+在SQL語法內插入python變數方法
+
+大家好 小弟我python新手 有問題想請教大家
+我想寫一個class中的function可以輸入table名稱和插入的值
+就可以直接寫入sql的databse中的table裡
+但是在變數那塊不管是用format或是execute裡丟入變數都成功不了
+不是出現沒有此column就是出現沒有這個table
+已經確定column和table都是確實存在的，想請問有什麼方式解決
+
+
+https://ithelp.ithome.com.tw/questions/10208838
+python閏年計算
+
+小弟剛開始學程式，剛剛在看網路上大家講解閏年的計算時，發現大家在計算閏年時都會先從4開始除起。
+例如:
+
+然而，我自己在最開始想到的解決方法為從400開始檢查起，因為我認為如果可被400整除，即符合其他條件
+程式如下:
+
+想請教一下，這樣的解法是否有誤?
+
+https://ithelp.ithome.com.tw/questions/10208837
+想實現一個在個人電腦查詢的簡單系統
+
+大家好，我是新手，最近學了mysql和前端語言和java還有python
+想練習做一個生活上或用到的小工具
+我最近想做一個輸入關鍵字，例如輸入YAHOO或是奇摩，下面就會列出有關YAHOO的相關訊息或是網址，有點類似字典查詢功能的app或網頁，但是因為只在自己電腦使用，所以不會租網域之類。
+目前想法是把資料存在mysql的資料庫，然後寫網頁(框架)去把mysql的東西讀出來?但這個需要php技術嗎?我沒有學過php，不是說很理解要怎麼把mysql的資料傳到前端
+另一個是我曾經試過一個笨方法，把資料全部用Python寫成字典，但缺點就是，我一定要輸入YAHOO或是yahoo之類，我只要輸入奇摩這種非YAHOO的關鍵字就不能找到資料。
+想請大家幫我想看看有什麼方法可以讓我實現我的小工具。
+感謝
+
+https://ithelp.ithome.com.tw/questions/10208836
+關於新手期間無法回復導致內心陰影面積上升那檔事
+
+我是先前提問【下載YouTube直播，直存雲端】的原PO。
+因為手誤按到最佳解答，然後又無法回復之窘境，想在這邊回覆一樓給我的指點：
+謝謝你，不好意思我可以發自內心向你保證我並沒有要重製他人作品的意思。
+其實我是在看一個頻道，他不定時會直播教學，可是他是講外語的而且有時差上的問題，所以我只能先嘗試著錄下來在慢慢聽慢慢學，只有個人學習「沒有要外傳的意思」，這樣是否也觸法我不甚清楚，讓你誤解了實在是很抱歉！所以想問問看有沒有解決方法。
+
+https://ithelp.ithome.com.tw/questions/10208835
+有關多台網頁伺器, 但對外IP才幾個
+
+各位大大
+因企業運維來了一位大哥建議公司把各種網站服務放在VM上，VM可以切很多台伺服器出來，這樣子不會一台機掛就全部服務網站都掛，是感覺沒錯的樣子，但落實到我這有一個小小難題，要我切一個IP對多個網址我會，就在APACHE那設定VHOST就好，但目前要在僅有兩台IP分到各內部伺服器，我就犯難了，這要怎麼切啊，我曾想過用不同的PORT來對應，但各網址伺服器負責人對此又有點意見，各位大大，救命啊。
+
+https://ithelp.ithome.com.tw/questions/10208834
+【求助】下載YouTube直播，直存雲端。很難？？
+
+想請教大家，我有一個喜歡的YT頻道不定期會直播 (同時也在Twitch直播)，直播完就會刪除看不到。
+想知道要如何「不透過螢幕錄製」的方式，是否能直接保存至某雲端或網站代錄，這樣我螢幕才能先做其他事。
+不一定要每次自動代錄 (應該很難)，至少在我有注意到直播的時候可以處理。希望用比較簡單的網站或軟體。謝謝！
+沒講清楚可再問我~~
+
+https://ithelp.ithome.com.tw/questions/10208832
+使用Switch當DHCP SERVER 與 使用Windows Server當 DHCP SERVER的差異~~?
+
+各位IT邦大神好:
+小弟有操作過 Windows DHCP Server，但對原理不是很懂，因公司先前都是用防火牆做DHCP SERVER，最近想把DHCP SERVER從防火牆分開出來，上網找了一些架設方法，有說到DHCP SERVER也可以架設在 Core Switch端。
+小弟想請問這兩種架設方式，一個是架設在Server端，一個是架設在Core Switch端，這兩種架設機制對未來運作的效率有不同的差別影響嗎?或只是差在操作介面的人性化(Windows)而已?
+先謝過大神們~
+
+https://ithelp.ithome.com.tw/questions/10208831
+JavaScript-迴圈Ajax的執行障礙(已解答)
+
+
+我目前在用Ajax來做爬蟲，功能是找到文章內的img、自動找到前一篇文章網址。
+虛擬碼如下:
+url="要抓的位址"
+for 迴圈{
+let req=new XMLHttpRequest;
+req.open("get",url);
+req.onload=function(){
+圖片網址:用getelement找
+前一篇網址:用DOMParser()找到前一篇文章網址
+console.log(圖片網址)
+url=前一篇網址
+}
+}
+結果發現會出錯
+會一直抓到同一篇文章的圖片.....
+
+
+**
+更新:我已經自己找到解答了XD**
+不要用迴圈改用SetInterval就可以了  這例子給各位參考
+會發現解答是我意外逛文章看面試題經驗分享
+他裡面寫 面試官問:"遇到超大量資料迴圈卡頓怎麼辦" 然後那篇文的作者說不會
+後來面試官給他答案:"拆開迴圈or用SetInterval"
+我就想了一想  雖然我不是超大量資料  但也算是某種卡頓(?)
+結果終於把我搞了三天  東改西改卻還是失敗的地方修正完成....天壓~
+多逛文有用XDDD
+
+https://ithelp.ithome.com.tw/questions/10208830
+VS CODE  Portable+ PortableGit 問題請教
+
+您好：
+我使用免安裝版VS CODE放在 C:\x_soft\VSCode
+免安裝版 Git  放在 C:\x_soft\PortableGit\bin
+我在workspace setting設定
+參考(  https://241931348f64b1d1.wordpress.com/2016/07/22/how-to-use-portable-visual-studio-code-and-git/ )
+  "http.proxy": "http://192.168.1.1:80",
+ 
+    // Path to the git executable
+    //"git.path": "C:\\Data\\GitPortable\\App\\Git\\Bin\\git.exe"
+    "git.path": "C:\\x_soft\\PortableGit\\bin\\git.exe"
+
+但是重開VS CODE
+他會顯示
+Unable to initialize Git; AggregateError(2) Error: Unable to find git Error: Unable to find git
+
+請問，這該如何解決?
+謝謝!
+
+https://ithelp.ithome.com.tw/questions/10208829
+請問 Kubernetes 如何排程執行工作，但不起新 Pod 以保留前次結果下次取得
+
+寫了個 Script 執行完會留下紀錄，以便下一次排程跑時會再去抓取前一次紀錄比對
+但用 CronJob 似乎每次都會起新的 Pod 來執行工作，前次紀錄就沒了
+想問除了掛 PVC 外有其他方法可以原 Pod 重啟執行嗎？謝謝
+
+https://ithelp.ithome.com.tw/questions/10208828
+[求救]VScode字元寬度的設定?
+
+我的神奇VScode
+我只要更改字體 => 2英文字寬 != 1中文字寬
+使用等寬字體也沒用..
+例如: 我設定這樣
+Font Family
+控制字型家族。
+'Cascadia Code', Consolas, 'Courier New', monospace
+就會變成這樣..
+
+如果我不改字體 就會對齊 => 2英文字寬 == 1中文字寬
+像這樣:
+Font Family
+控制字型家族。
+monospace
+
+我好想改字體啊...但一改字體 中文部分就會無法對齊 哭啊...
+PS:雖然寫程式要避免中文,但我自己的專案都習慣用中文QQ
+補充:只有VSCODE會這樣, Notepad、word、記事本, 都是 2英文字寬 == 1中文字寬
+請教高手 是否有解?
+
+https://ithelp.ithome.com.tw/questions/10208827
+LeetCode 14. Longest Common Prefix RunTime問題
+
+想請問判斷不試空字串時沒問題
+但只要一判斷空字串就會出現rumtime error
+不知道判斷空字串的地方哪裡出了問題?  或是有其他問題在?
+
+
+https://ithelp.ithome.com.tw/questions/10208826
+GoDaddy網域和虛擬主機的問題
+
+最近在GoDaddy買了一個網域和虛擬主機，網域沒有加購SSL服務，打開網址後首頁出現的不是在根目錄裡設置的index.php檔案內容，而是建立GoDaddy免費模板的頁面，是網域還有需要設定什麼嗎?
+
+網域和虛擬主機
+
+網域和根目錄的對應看起來沒有問題
+
+網站的根目錄
+
+首頁怎麼會出現這個呢
+
+不曉得和DNS記錄的設定有無關係
+
+
+https://ithelp.ithome.com.tw/questions/10208825
+python：savgol_filter的使用
+
+
+想請問各位大神，savgol_filter的使用方式，以及該如何更改code!!
+
+https://ithelp.ithome.com.tw/questions/10208824
+如何policy修改網域印表機IP
+
+以前裝印表機預設安裝
+雖然會自動建立標準TCP/IP連線
+但是在連接阜上都是使用印表機名稱
+擔心在跨網段上會無法列印
+有沒有用ad去修改全網域印表機IP的方式?
+手動一台一台改太花時間
+
+https://ithelp.ithome.com.tw/questions/10208823
+syslog轉發到ELK
+
+各位前輩好，目前有幾個問題想求指教，麻煩各位了，十分感謝!
+
+目標：將設備的system log & service log送到ELK上
+環境：linux redhat 5.7數台(syslog)、ubuntu 20.04數台(rsyslog)、windows server 2012&2019數台、網通設備等，ELK&Logstash已有建置好
+
+目前我的想法是架一台Rsyslog server(簡稱R主機)，將主機上的syslog透過設定指向R主機後，以JSON格式送到Logstash，接下來再由負責ELK同事協助轉送。(或有其他建議也歡迎)
+但在爬文過程中有點迷惘，想請前輩指點迷津，因為現有環境力求穩定(且都實體機沒有還原點用)，我怕我搞不清楚會發生遺憾的事
+Rsyslog看似為linux原生套件，在新版本內才有，大多數主機我用rpm -qa | grep rsyslog查都沒有使用，應是用原本的syslog
+1.如果中間不裝R主機，直接將以下IP設定成ELK或Logstash可行嗎?(目前有些伺服器有Webui的，有從上面設定syslog server指向ELK，EX HP iLo)
+2.可以修改redhat的/etc/sysconfig就好嗎?但這幾台不是使用Rsyslog
+*.info;mail.none;authpriv.none;cron.none @R主機IP
+(修改下圖第三行如上)
+
+3.ubuntu有rsyslog，client看似只要修改/etc/rsyslog.conf如下圖就可以使用?
+
+4.在Rsyslog官方有看到Window agent，但是還沒仔細研究可行性，有看到很多網友都有中文的問題，目前看似要裝agent進去才能用?
+5.R主機可以收上面2~4不同來源及版本的嗎?
+6.如果2~4的log都成功送到R主機，那在本機是否就不會寫入到/var/log/message等記錄檔內?
+7.網通設備如思科，我設定以下指令就可以成功將log傳到ELK了嗎?還有LB及Router，應該是相同設定概念?
+SW端
+#conf t
+#logging ELKIP
+ELK端
+修改/etc/syslog.conf
+加入Log類型與寫入位置如下圖
+
+
+8.如有運行程式，想收集服務log，也能用Rsyslog去收嗎?
+9.關於收集log的空間問題，我這些設備雖然數目不多，五花八門各類加總也有個40台，想請問前輩們都是怎麼估算空間是否足夠的?
+先跪下>< 問題真的好多，查網路資料大部分前輩都是將舊系統直接yum install rsyslog，但我的環境無外網，要裝東西十分困難，而且怕出錯造成log全不見或是直接塞爆硬碟，上來希望能明亮我眼前的迷霧
+如看到此處，無論如何，先預祝您有美好健康的每一天!
+
+https://ithelp.ithome.com.tw/questions/10208822
+元件命名
+
+大家都參考什麼命名元件？
+
+https://ithelp.ithome.com.tw/questions/10208821
+請問系統內的印表機圖示如何能顯示實機的縮小圖樣?
+
+您好~
+想請問大家，是否有碰過，某些型號的印表機，安裝到系統後，系統內控制台的圖示，有時會是該型號機器的縮小版，但有時又是常見的通用版圖示，如下圖。
+
+像上圖的epson便可秀出該印表機的外觀，可以很直接認出，但前幾天嘗試幫客戶安裝HP DesignJet T830 MFP的繪圖機，使用官方建議安裝的驅動安裝，但所顯示的圖示，卻只是一般常看到的印表機圖示，無法顯示縮小版的樣子，因我以為使用官方的大容量版驅動，應該就可以帶出正確圖示，還是說，是必須看官方有沒做出這樣的圖示?
+系統為Win10，該電腦其他型號的印表機，有些也是有顯示正確圖示的，非全部都是常見的印表機圖示。
+
+
+https://ithelp.ithome.com.tw/questions/10208820
+Window 10 停用 IE 後如何使用 IE 運行老舊程式
+
+請問 Window 10 停用 IE 後如何使用 IE 運行老舊程式
+
+https://ithelp.ithome.com.tw/questions/10208819
+Python  Flask 與 Flask-APScheduler 無法同時運行 (佈署在IIS上)
+
+背景說明
+如標題，
+目前在測試Flask框架下，透過APScheduler定時執行任務，
+Flask主程式跟APSceduler程式碼在同一個.py檔內，
+並定時執行計數的工作，將計算值輸出到log.txt。
+問題
+將scheduler.start()寫在 if name == "main" 內，
+就無法正常執行定時任務，但可以正確路由到網址，
+如果把scheduler.start()移出來，
+則定時任務正常執行，但就變成不能正確由到網址。
+不知道是不是一次只能有一個thread在運行? 不知道有沒有相關文件可參考?
+若是的話，該如何解決呢?
+以下是程式碼的部分:
+from flask import Flask
+from apscheduler.schedulers.blocking import BlockingScheduler
+import logging
+
+app = Flask(__name__)
+
+#設定Logging 參數
+logging.basicConfig(level=logging.WARNING, filename='./log.txt',
+	format='[%(asctime)s %(levelname)-8s] %(message)s',
+	datefmt='%Y%m%d %H:%M:%S',
+	)
+
+#endregion
+
+#時區設置
+blockSched = BlockingScheduler(timezone="Asia/Taipei")
+
+#region (測試用) APScheduler 用
+initnum = 1
+@blockSched.scheduled_job('interval', seconds=20)
+def counter():
+    global initnum
+    total = initnum + 1 
+    
+    logging.error('計算: ' + str(total))
+    print(total)
+
+    initnum = total
+
+#endregion
+
+
+@app.route("/apstest")
+def home():
+    return "Hello Flask"
+
+#blockSched.add_job(counter, 'interval', seconds=10)
+
+#==== blockSched.start()，在這裡可以正常執行定時任務 ===========
+#==== 但就變成無法正常路由到 /apstest ===========
+#blockSched.start()
+
+if __name__ == "__main__":
+    #==== 可以正常路由到 /apstest ===========
+    #==== 但就無法正常執行定時任務 ===========
+    blockSched.start()
+    app.run()
+
+
+
+https://ithelp.ithome.com.tw/questions/10208818
+請問有人知道Apes艾博斯科技嗎
+
+最近有收到Apes的工作邀約，但在網路上有看到過去的負面新聞，以小公司來講，我個人有一點擔心未來會不會出什麼事...
+但老闆與主管看起來都還挺和善的！
+
+https://ithelp.ithome.com.tw/questions/10208817
+EXCEL 求救
+
+班上有國英數三科成績,某科分數高於80為A , 某兩科分數和高於140為B , 如何尋找滿足A且B 的人 ?
+我是用 IF 的 OR , 一行寫出 A , 另一行寫出B , 但是尋找時一次只能找 A 或 B ,無法一次同時找 A 且 B
+不知大大可否給方法 , 感恩
+如 81 62 60
+55 70 72
+50 82 50
+56 60 81
+
+https://ithelp.ithome.com.tw/questions/10208816
+请问台湾现在元宇宙发展到什么程度了?
+
+本人对元宇宙这一新生事物非常感兴趣,不知道大家对这个技术的想象力怎么样?
+以往我们获取资讯都是来自二维平面,像什么手机,平板,显示器...啦,从2D向3D进化是技术必然的趋势,3D世界兼容所有2D应用,这是无法逆转的.
+元宇宙一定会重塑我们现在的生活方式,疫情期间,大家都不能自由活动了,在元宇宙里面,我们可以重构这个地球,下面我来列举几个场景:
+1.教育:学生仍然可以在教室学习,老师讲地理课的时候,真的拿出了一个地球,还是回溯整个地球演化的进程;
+2.职场:大陆这边人说:"每天上班的心情就和上坟(祭祖)一样沉重",你就能感觉在大都市通勤是有多么的困难,元宇宙可以让你彻底摆脱肉生舒服,我把办公场所设置在喜马拉雅山顶都行;
+3.大城市里面养宠物太难了,每天都要带她们去散步,拉屎拉尿的,我完全可以在元宇宙中设计这样的宠物商店来售卖这样的萌宠,宠物不必是自然界中存在的,什么日本动画里面的动物啊,都可以有啊;
+4.你觉得今晚是和谁约会比较好,是我们伟大的苍老师还是小泽玛丽亚?
+5.我想沉浸式的玩3D游戏...
+6.驾校还需要真的上车训练吗
+7.购物还用逛电商网站?元宇宙魔幻商城
+
+https://ithelp.ithome.com.tw/questions/10208815
+Windows Server 2008 R2 SP1 原地升級問題
+
+請問各位前輩
+公司想將Windows Server 2008 R2 原地升級成 Windows Server 2019
+日前將Windows Server 2008 R2 安裝完成
+並啟用 Windows Server 2008 R2
+之前有爬文知道Windows Server 2008 R2可以用原地升級方式
+升級到 Windows Server 2012 R2
+但我升級到 Windows Server 2012 R2 後
+啟用狀態 變成 未啟用
+電腦名稱跟我設定的網路配置都跟我安裝完成 Windows Server 2008 R2時相同
+所以我很確定我是用升級方式安裝 Windows Server 2012 R2
+我重複試了2-3次
+都是未啟用
+請問有人遇到相同情況嗎?
+請各位指教 謝謝
+
+https://ithelp.ithome.com.tw/questions/10208814
+python-在VS code終端機執行的錯誤問題
+
+直接上圖
+
+很明顯我code裡面的迴圈因為縮排沒弄好出錯了
+現在終端機底下完全卡住沒辦法輸入
+後來我找到方法重開終端機  只是還是無法跑x=input()這種
+**後來把程式碼改對的  丟到測資那邊也通過  若我在互動式窗也可成功執行
+跑出正確結果
+**
+只是還有圖片中的問題
+
+以上  想問一下  一般打完python都一定要在互動式窗執行嗎?
+終端機執行為什麼會不等使用者輸入input導致出錯呢?
+那 除了互動式窗以外  是否還有別的執行方法
+
+https://ithelp.ithome.com.tw/questions/10208813
+vue 三層式下拉選單請益
+
+以前沒寫過三層式下拉選單，目前是按照先前寫雙層式下拉選單的邏輯模仿而來的，
+處理的方式是一次撈取整包資料再用computed處理成連動的選單，因此當資料越來越大包時一開始的載入就會很久；因為以前最多就雙層而以不至於會太大包。
+想問是否有甚麼方法可以改善呢?還是我應該每一層選項change的時候才去從後端撈出下一個子層的資料呢，但不曉得這樣是不是好的寫法還沒試過。
+此URL為三層下拉選單的程式 https://jsfiddle.net/5b2uLfp9/
+以下為選單的資料表大概的樣子為folder->scan->host
+ const folderdata1 = [
+            { folderid: 27, foldername: 'A', scanid: 28, scanName: 'apple' ,hostid:1,hostname:'applepie'},
+            { folderid: 4588, foldername: 'B', scanid: 4732, scanName: 'Black', hostid:2,hostname:'BlackCoffee'},
+            { folderid: 4588, foldername: 'B', scanid: 4732, scanName: 'Black', hostid:8,hostname:'BlackMan'},
+            { folderid: 4588, foldername: 'B', scanid: 4665, scanName: 'Blue' , hostid:3,hostname:'BlueBird'},
+          	{ folderid: 4588, foldername: 'B', scanid: 4665, scanName: 'Blue' , hostid:4,hostname:'BlueSky'},
+            { folderid: 4588, foldername: 'B', scanid: 4665, scanName: 'Blue' , hostid:5,hostname:'BlueTears'},
+        ]
+
+以下為主要computed的程式碼
+data() {
+    return {           
+             input: {
+                  folder: null,
+                  scan: null,
+                  host:null,
+                    },
+             folders: [],
+           }
+         },
+created() {
+    this.folders = folderdata1 //之後要接的選單資料
+         },
+computed: {
+     parentList() {
+              let obj = {
+                  sort: [],
+                  map: {}
+                      }
+            this.folders.forEach(({ folderid, foldername, scanid, scanName,hostid,hostname }, index) => {
+                        if (!obj.map[foldername]) {
+                            obj.sort.push(foldername)
+                            // mapObj建立一個foldername 的屬性，值是 sort,map
+                            obj.map[foldername] = {
+                                sort: [],
+                                map: {},
+                            }
+                        }
+                        if(!obj.map[foldername].map[scanName]){
+                        	obj.map[foldername].sort.push(scanName)
+                        	obj.map[foldername].map[scanName] = { index, scanid,sort:[],map:{} }
+                        }
+                        obj.map[foldername].map[scanName].sort.push(hostname)
+                        obj.map[foldername].map[scanName].map[hostname]={index,hostid,hostname}
+                    })
+                    return obj;
+                },
+       childrenList() {
+               this.input.scan = null
+               if (this.input.folder) {
+                     return  this.parentList.map[this.input.folder]
+               } else {
+                     return []
+                     }
+                },
+        grandsonList() {
+                this.input.host = null
+                if (this.input.scan) {
+                     return this.childrenList.map[this.input.scan]
+                } else {
+                     return []
+                    }
+                },
+          },
+
+
+https://ithelp.ithome.com.tw/questions/10208812
+quartus問題 燈號閃爍
+
+請問各位大佬
+要如何做才能按一次按鈕，讓燈號變換一輪後熄滅，等待下一次按鈕被按下
+類似這樣:
+按鈕 為輸入，當按下按鈕匙，此時此須顯示燈號(燈號顯示維持1秒亮，然後熄掉1秒，再亮1秒後，燈號熄掉)
+
+https://ithelp.ithome.com.tw/questions/10208811
+我的IPad 怪怪的
+
+我的IPad 怪怪的，重開好幾次都一樣，雖然實際影響不大，但總怕它哪天突然罷工，請問需要報修嗎？
+影片連結：https://terabox.com/s/1IpWn4A2hsz-Trvtwj0s_Qw
+謝謝大家！！！
+
+https://ithelp.ithome.com.tw/questions/10208810
+如何在 line bot 的程式碼裡 寫出可以接收 post 並處理 post 傳來的訊息的代碼
+
+各位前輩好，小弟目前正在做一個專案，目的是想讓出門時不會忘記帶重要物品。
+應用情景：
+
+把beacon掛在每天必備的東西上(這邊以鑰匙代替)，並在玄關處放置ESP32來接收beacon的訊息。在出門時，當ESP32有接收到beacon傳來的訊息ID時，就會把訊息ID送到line bot並到資料庫內去做比對，如果ID符合，就會透過line notify告訴使用者，東西都有帶到，那如果比對過後發現少一樣，則會通過line notify去提醒使用者，少帶一樣東西。
+
+目前遇到困難：
+
+大概可以了解如何從ESP32發送POST，但是不懂的是發送Post的網址，是需要發送lien bot webhook的那個網址嗎？
+2.不知道在line bot的程式中，該怎樣去寫接收ESP32傳來的Post的code，只知道需要寫個相對應的route去接收，但是還是有點無從下手。
+
+弄了幾天，爬了許多的文，但是還是不知道該如何做，如果可以，還麻煩各位前輩為我解惑一下。
+謝謝各位前輩
+
+https://ithelp.ithome.com.tw/questions/10208809
+excel時間格式轉成週數的寫法
+
+想請問一下excel時間格式轉成週數的寫法 ,我有一個例題如下 ,想從星期四晚上7點後為新的一週 ,請問該如何編寫
+DateTime                    WorkWeek
+2022/05/26 06:15:01 AM         21
+2022/05/26 11:02:22 AM         21
+2022/05/26 01:35:10 PM         21
+2022/05/26 09:00:00 PM         22
+2022/05/27 09:39:11 PM         22
+2022/05/27 11:17:22 PM         22
+2022/05/27 11:26:49 PM         22
+
+https://ithelp.ithome.com.tw/questions/10208808
+WIN10 模擬ISCSI 
+
+請問一下
+因為想做LAB但手邊沒有Storage
+有人告訴我可以用WIN10去啟用ISCSI當作空間給ESXI掛載
+可是我查不到相關的教學...
+啟用了ISCSI後就算連線也看不到LUN
+(應該說在哪設定LUN我都找不到)
+是我理解錯誤嗎？
+
+https://ithelp.ithome.com.tw/questions/10208807
+请问台湾现在linux普及的怎么样了?
+
+我感觉现在大陆这边,除了科学有研究,基本没有人使用Linux啊.
+--本消息发自ubuntu2204
+
+https://ithelp.ithome.com.tw/questions/10208806
+如何快速設定FortiClient VPN SSL-VPN參數?
+
+各位大大好，
+如有約50-100台機器需安裝FortiClient VPN與設定4個SSL-VPN參數包含連接名、遠程網關、自定義端口，有沒有什麼方法可以快速設定? 還是得土法煉鋼一個一個輸入呢?
+
+https://ithelp.ithome.com.tw/questions/10208805
+python基礎-讓使用者輸入input卻沒有等待
+
+
+目的:
+讓使用者輸入數字  再處理數字
+問題:
+沒有等待輸入數字  直接進行下去  導致錯誤
+說明:
+我用的環境是VS code 執行方法是shift+enter
+
+以下是執行碼：
+a=0
+b=1
+c=a+b
+first=True
+num = input("請輸入喔")
+
+
+if int(num)<3:
+    print("請輸入大於三的數字")
+else:
+    x=0
+    while x < (num-3):
+        a=b
+        b=c
+        c=a+b
+        if (first==True):
+            print("0 1 1 ",end="")
+            first=False
+        print(c,end="")
+        print(" ",end="")
+        x=x+1
+
+錯誤顯示在此：
+
+
+請問該如何調整呢 已經完成練習題的解答了(費式數列XD)
+卡在不能輸入數值讓人很頭痛
+是否要用別的執行方法或是改一下code
+
+https://ithelp.ithome.com.tw/questions/10208804
+SQL語法如何計算數量
+
+請教各位大神SQL語法如下
+select BRAND_NAME 它牌 ,COUNT (ASSET.BRAND_NAME)from ASSET
+where BRAND_NAME not in ('brother','NCC')
+GROUP BY BRAND_NAME
+
+若需要計算所有數量該如何下???
+
+https://ithelp.ithome.com.tw/questions/10208803
+請問WIFI如何做到全廠只需要輸入一次密碼，全公司5台WIFI交換機會自動獲取附近最強WIFI連線，並且不需要再輸入密碼?
+
+請問WIFI如何做到全廠只需要輸入一次密碼，全公司5台WIFI交換機會自動獲取附近最強WIFI連線，並且不需要再輸入密碼?
+
+https://ithelp.ithome.com.tw/questions/10208802
+請教各位大神 sql語法select 問題
+
+--工作表四-0601
+select i.維修人員,i.接單數,i.保固內,i.保固外,i.已完修數 j.已退修數 from (  ---------i和j這段出現紅蚯蚓
+select g.維修人員,g.接單數,g.保固內,g.保固外,h.已完修數 from (
+select e.維修人員,e.接單數,e.保固內,f.保固外 from (
+select c. 維修人員,c.接單數,d.保固內 from (
+select a.維修人員 維修人員,b.接單數 from (
+select MECHANIC_NAME 維修人員 from WO
+group by MECHANIC_NAME
+)A Left join (
+select MECHANIC_NAME 維修人員,count(*) 接單數 from  WO
+group by MECHANIC_NAME
+)B ON (A.維修人員 = b.維修人員)
+--需確認 ASSET.HAVEWARRANTY=1 (保內還是外)
+)C left join (
+select wo.MECHANIC_NAME 維修人員,count(ASSET.HAVEWARRANTY) 保固內 from ASSET
+join wo on (wo.ASSET_ID = ASSET.ASSET_ID)
+where ASSET.HAVEWARRANTY = 1
+group by wo.MECHANIC_NAME
+)D on (c.維修人員 = d.維修人員)
+)e left join (
+ select wo.MECHANIC_NAME 維修人員,count(ASSET.HAVEWARRANTY) 保固外 from ASSET
+ join wo on (wo.ASSET_ID = ASSET.ASSET_ID)
+ where ASSET.HAVEWARRANTY = 0
+ group by wo.MECHANIC_NAME
+)f on (e.維修人員 = f.維修人員)
+
+)g left join (
+select wo.MECHANIC_NAME 維修人員,count(wo.STATE_NAME) 已完修數 from WO
+where wo.STATE_NAME  like N'%已完修%'
+group by MECHANIC_NAME
+)h on (g.維修人員 = h.維修人員)
+-----i和j這段出現紅蚯蚓
+)i left join (
+select wo.MECHANIC_NAME 維修人員,count(wo.STATE_NAME) 已退修數 from WO
+where wo.STATE_NAME  like N'%已退修%'
+group by MECHANIC_NAME
+)j on (i.維修人員 = j.維修人員)
+請問這語法有錯嗎??
+
+https://ithelp.ithome.com.tw/questions/10208801
+HELP!!!!!!   python 設定S含有6個學生的姓名資料
+
+完全沒學過python但得上python課程，完全不懂，請專業人士救火，感激不盡！！！
+（題目）
+設定S含有6個學生的姓名資料, 請印出, 格式如下:
+第 1筆   洪廷暐
+第 2筆   邱卉妮
+第 3筆   陳建勲
+
+https://ithelp.ithome.com.tw/questions/10208800
+將圖片存在private repository,在HTML中將圖片引用
+
+想問一下，如果我將圖片存在private repository,之後想要在HTML中將圖片引用，這樣是可以辦到的嗎?
+我查了網路的很多方法，但是好像都不可行，只有將repository設為public才可以成功地引用，想問一下是否有方法可以解決。
+不好意思打擾了~
+
+https://ithelp.ithome.com.tw/questions/10208799
+請問筆電充電
+
+我的 ASUS X540MA 常要外帶長時間使用 , 要如何充電比較好
+
+https://ithelp.ithome.com.tw/questions/10208798
+有關Mybatis Generator未生成xml檔
+
+各位邦友，大家好!
+小弟這次要請教有關MyBatis-Generator的自動生成問題。
+環境版本
+Java EE:2022-03 (4.23.0)
+Mybatis Generator 1.4.1
+MS-SQL 2017(Express)
+部屬方式
+Dynamic Web Project
+狀況敘述
+觀看網上教學，編寫generatorConfig.xml來對應
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE generatorConfiguration PUBLIC "-//mybatis.org//DTD MyBatis Generator Configuration 1.0//EN" "http://mybatis.org/dtd/mybatis-generator-config_1_0.dtd" >
+<generatorConfiguration >
+ <classPathEntry location="D:\chad-workspace\digital_student_card\Demo-Servlet\src\main\webapp\WEB-INF\lib\mssql-jdbc-7.2.2.jre8.jar" />
+  <context id="context1" >
+    <jdbcConnection driverClass="com.microsoft.sqlserver.jdbc.SQLServerDriver" 
+                    connectionURL="jdbc:sqlserver://localhost:1433;databaseName=demo_mybatis"
+                    userId="account" password="password" />
+    
+    <!-- 配置model生成 -->
+    <javaModelGenerator targetPackage="com.mybatis.demo.model" targetProject="Demo-Servlet" />
+    
+    <!-- 配置sqlmap生成 -->
+    <sqlMapGenerator targetPackage="com.mybatis.demo.mapper" targetProject="Demo-Servlet">
+    	<property name="enableSubPackages" value="true" />
+    </sqlMapGenerator>
+    
+    <!-- 配置mapper接口 -->
+    <javaClientGenerator targetPackage="com.mybatis.demo.dao" targetProject="Demo-Servlet" type="XMLMAPPER" >
+    	<property name="enableSubPackages" value="true" />
+    </javaClientGenerator>
+    
+    <table tableName="demo_students" enableCountByExample="false" enableUpdateByExample="false" 
+    enableDeleteByExample="false" enableSelectByExample="false" selectByExampleQueryId="false" />
+  
+  </context>
+</generatorConfiguration>
+
+預計會產生dao,mapper,model的相對應檔案
+但實務上操作卻獨缺mapper的xml檔(內容是resultMap相關)，
+找官方文件及網上QA，不明白所以然
+不知是否是其他環境版本過新還是其他問題，請眾大神指教。
+
+https://ithelp.ithome.com.tw/questions/10208797
+勒索病毒
+
+最近中了一個勒索病毒叫0XXX在D曹這是否有解?
+還是說只能格式化了?
+格式化後我是否還需要重灌整台電腦 或是該用什麼掃毒?
+
+https://ithelp.ithome.com.tw/questions/10208796
+tensorflow BP倒傳遞類神經 遇到問題
+
+各位大大好，小弟剛入門寫PYTHON，我用tensorflow寫倒傳遞類神經，一直無法解決問題，之前可以跑，現在突然無法跑，不知道是不是漏掉什麼安裝包沒下載，原因暫時不曉得，希望大大們幫忙。
+evaluations = []
+STEPS = 400
+for i in range(1250):
+regressor.train(input_fn=wx_input_fn(X_train, y=y_train), steps=STEPS)
+evaluations.append(regressor.evaluate(input_fn=wx_input_fn(X_val,
+y_val,
+num_epochs=1,
+shuffle=False)))
+以上是我的程式碼，結果跑出以下錯誤:
+NotFoundError: Restoring from checkpoint failed. This is most likely due to a Variable name or other graph key that is missing from the checkpoint. Please ensure that you have not altered the graph expected based on the checkpoint. Original error:
+2 root error(s) found.
+(0) Not found: Key dnn/hiddenlayer_1/bias not found in checkpoint
+[[node save/RestoreV2 (defined at \anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py:1502) ]]
+(1) Not found: Key dnn/hiddenlayer_1/bias not found in checkpoint
+[[node save/RestoreV2 (defined at \anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py:1502) ]]
+[[save/RestoreV2/_7]]
+0 successful operations.
+0 derived errors ignored.
+Original stack trace for 'save/RestoreV2':
+File "\anaconda3\envs\bp-gpu\lib\runpy.py", line 197, in _run_module_as_main
+return _run_code(code, main_globals, None,
+File "\anaconda3\envs\bp-gpu\lib\runpy.py", line 87, in _run_code
+exec(code, run_globals)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel_launcher.py", line 16, in 
+app.launch_new_instance()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\traitlets\config\application.py", line 846, in launch_instance
+app.start()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\kernelapp.py", line 677, in start
+self.io_loop.start()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tornado\platform\asyncio.py", line 199, in start
+self.asyncio_loop.run_forever()
+File "\anaconda3\envs\bp-gpu\lib\asyncio\base_events.py", line 601, in run_forever
+self._run_once()
+File "\anaconda3\envs\bp-gpu\lib\asyncio\base_events.py", line 1905, in _run_once
+handle._run()
+File "\anaconda3\envs\bp-gpu\lib\asyncio\events.py", line 80, in _run
+self._context.run(self._callback, *self._args)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\kernelbase.py", line 471, in dispatch_queue
+await self.process_one()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\kernelbase.py", line 460, in process_one
+await dispatch(*args)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\kernelbase.py", line 367, in dispatch_shell
+await result
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\kernelbase.py", line 662, in execute_request
+reply_content = await reply_content
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\ipkernel.py", line 360, in do_execute
+res = shell.run_cell(code, store_history=store_history, silent=silent)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\ipykernel\zmqshell.py", line 532, in run_cell
+return super().run_cell(*args, **kwargs)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\interactiveshell.py", line 2880, in run_cell
+result = self._run_cell(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\interactiveshell.py", line 2935, in _run_cell
+return runner(coro)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\async_helpers.py", line 129, in pseudo_sync_runner
+coro.send(None)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\interactiveshell.py", line 3134, in run_cell_async
+has_raised = await self.run_ast_nodes(code_ast.body, cell_name,
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\interactiveshell.py", line 3337, in run_ast_nodes
+if await self.run_code(code, result, async=asy):
+File "\anaconda3\envs\bp-gpu\lib\site-packages\IPython\core\interactiveshell.py", line 3397, in run_code
+exec(code_obj, self.user_global_ns, self.user_ns)
+File "\AppData\Local\Temp\ipykernel_21300\2606756210.py", line 4, in <cell line: 3>
+regressor.train(input_fn=wx_input_fn(X_train, y=y_train), steps=STEPS)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 350, in train
+loss = self._train_model(input_fn, hooks, saving_listeners)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1176, in _train_model
+return self._train_model_default(input_fn, hooks, saving_listeners)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1207, in _train_model_default
+return self._train_with_estimator_spec(estimator_spec, worker_hooks,
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow_estimator\python\estimator\estimator.py", line 1502, in _train_with_estimator_spec
+with training.MonitoredTrainingSession(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 602, in MonitoredTrainingSession
+return MonitoredSession(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 1035, in init
+super(MonitoredSession, self).init(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 750, in init
+self._sess = _RecoverableSession(self._coordinated_creator)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 1232, in init
+_WrappedSession.init(self, self._create_session())
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 1237, in _create_session
+return self._sess_creator.create_session()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 903, in create_session
+self.tf_sess = self._session_creator.create_session()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 661, in create_session
+self._scaffold.finalize()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\monitored_session.py", line 244, in finalize
+self._saver.build()
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 848, in build
+self._build(self._filename, build_save=True, build_restore=True)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 876, in _build
+self.saver_def = self._builder._build_internal(  # pylint: disable=protected-access
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 509, in _build_internal
+restore_op = self._AddShardedRestoreOps(filename_tensor, per_device,
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 383, in _AddShardedRestoreOps
+self._AddRestoreOps(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 335, in _AddRestoreOps
+all_tensors = self.bulk_restore(filename_tensor, saveables, preferred_shard,
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\training\saver.py", line 583, in bulk_restore
+return io_ops.restore_v2(filename_tensor, names, slices, dtypes)
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\ops\gen_io_ops.py", line 1489, in restore_v2
+_, _, _op, _outputs = _op_def_library._apply_op_helper(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\framework\op_def_library.py", line 748, in _apply_op_helper
+op = g._create_op_internal(op_type_name, inputs, dtypes=None,
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\framework\ops.py", line 3561, in _create_op_internal
+ret = Operation(
+File "\anaconda3\envs\bp-gpu\lib\site-packages\tensorflow\python\framework\ops.py", line 2045, in init
+self._traceback = tf_stack.extract_stack_for_node(self._c_op)
+
+https://ithelp.ithome.com.tw/questions/10208794
+正則表達式要怎麼下
+
+各位前輩好，我有三個測試案例分別為
+1、輸入字串為 1-2--3--4-5--6--7 結果要篩出 -2--3--4、-5--6--7
+2、輸入字串為 1-2--3--4-5--6 結果要篩出 -2--3--4、-5--6
+3、輸入字串為 1-2--3--4-5 結果要篩出 -2--3--4、-5
+我的想法是當看到兩數字間有一個 dash 時，就知道其後面的片段內容我要抓起來，
+但目前卡在後面的片段內容要如何抓呢？懇請正則大神邦幫忙。
+目前我的正則表達式為 \d(-\d\S*)
+使用 greedy 與 ungreedy 都試用過，但還未篩出所需的結果。
+
+https://ithelp.ithome.com.tw/questions/10208793
+Nagios core alert via telegram
+
+看問答內的資訊, 用nagios(ver 4.4.6) 的實在太少，用會nagios是因為一頁一秒就可以看完系統狀況 , (4.4.7 不穩定,後來降回4.4.6)
+比公司內部其它的監控查看還方便許多,
+要問的問題是 google 了很多 透過telegram發送訊息的設定
+編輯完command.cfg  , restart nagios 服務就報錯了
+參考網頁如下 , 不知是否有大神能提供一個正確的參考網頁方便設定呢?
+(ps.目前已有已有其它監控系統可以透過telegram 發送alert ,所以不會是telegram id相關的問題)
+How-to – use Telegram with Nagios
+Telegram Notifications with Nagios
+Nagios Telegram Notifications
+Notifications from Nagios4 to Telegram
+
+https://ithelp.ithome.com.tw/questions/10208792
+資訊安全與服務品質問卷，以IT/IS人員填寫為主
+
+各位資訊界打拚的同儕、先進　您好：
+目前還需要50份問卷資料，資料收集不容易，希望大家多多幫忙
+以下是一份資訊安全與服務品質之間關聯的問卷。目前對於資訊安全與服務品質的學術論文討論並不多，希望透過此調查能夠了解資訊人員在執行資安規範的同時也能夠提供令顧客/使用者滿意的服務項目品質，期許能夠提供未來對於管理與服務領域研究之參考。
+在此，需要藉您寶貴的意見，誠摯地邀請您撥冗填寫本問卷。您的意見對本研究十分寶貴，請您仔細閱讀各題項，並依照個人想法與感受逐題填答。問卷網址是google表單，本問卷所得蒐集之資料僅做學術研究使用，論文結束時立即刪除，請安心做答。
+為感謝您的參與，本問卷將於填答研究問卷後舉行參加抽獎，另外捐助麥當勞叔叔之家2000元，煩請留下您的email以利後續抽獎程序。由衷感謝您的協助。
+google問卷表單
+
+https://ithelp.ithome.com.tw/questions/10208791
+【java】命令列參數args應用- 小型計算機
+
+各位大大好~
+我是剛學java的新手
+在課本上練習使用命令列參數args的範例時，不知為何跑出來的結果和事實不同 QQ
+程式可以跑，但是結果都不一定是正確的，有試過檢查x,y的類別，卻結果還是...
+想請問是不是哪裡有遺漏掉呢?  感謝~
+程式碼:
+import java.lang.*;
+class ch7_10
+{
+	public static void main(String[] args)
+	{
+		if(args.length !=3)
+		{
+			System.out.println("請使用這個公式處理");
+			System.exit(0);  //結束程式
+		}
+		int ans=0;
+		int x=Integer.parseInt(args[0]);
+		int y=Integer.parseInt(args[2]);
+
+		switch (args[1].charAt(0))
+		{
+
+			case '+':  ans= x + y;
+			case '-':  ans= x - y ;
+			case '*':  ans=x * y;
+			case '/':  ans= x / y;
+		}
+			System.out.printf("%s %s %s = %d%n",args[0],args[1],args[2], ans);
+
+結果:
+
+https://ithelp.ithome.com.tw/questions/10208790
+電子公文系統是否會收到郵件通知
+
+請問各位先進, 經濟部的電子公文系統除了每天上線確認是否有公文之外, 是否還會提前發送郵件通知我司有公文需要接收?
+
+https://ithelp.ithome.com.tw/questions/10208789
+平板電腦選擇
+
+想請問各位大大,平板價位預算在6000左右,還有甚麼選擇可以提供意見嗎?
+目前有google過:
+
+Samsung Galaxy Tab A8 3G/32G SM-X200 WiFi版
+【Lenovo】M10 PLUS FHD 10.3吋八核心平板電腦4G/64G(TB-X606F)
+
+1.不挑牌子。
+2.用途:處理網頁事務。
+3.可以外接藍芽鍵盤。
+4.尺寸大小10吋~8吋。
+ps.由於需求所以筆電不考慮。
+謝謝各位大大~
+
+https://ithelp.ithome.com.tw/questions/10208788
+取代 兩段同樣整合一段
+
+問個笨問題
+手上有一批資料做excel整理
+192.168.1.123 192.168.1.123 123 GB
+格式都是IP IP 流量
+如何把IP整合為一個
+192.168.1.123 123 GB
+192.168.1.253 253 GB
+取代的字元如何下?
+
+https://ithelp.ithome.com.tw/questions/10208787
+JavaScript-請問該如何登出網頁?
+
+各位前輩，大大好。
+我登入一個網站：https://abcd.123/home
+註冊之後，即可進入登入的畫面，到此後我想要用JS讓我登出。
+登出的網址是：https://xxx.abcd.123/logout
+我決定要用Location reload()來登出
+然而在登入的前提下進入這個網址是404找不到網頁的頁面。
+因此我用右鍵檢查，看見其中的寫法如下：
+<a href="https://xxx.abcd.123/logout" onclick="event.preventDefault();
+                                                        document.getElementById('logout-form').submit();" class="dropdown-item">
+                                            登出
+                                        </a>
+
+我試圖在devtool的console裡面直接執行event.preventDefault()
+出現了Uncaught TypeError: Cannot read properties of undefined (reading 'preventDefault')，
+要正確執行，似乎少了一些步驟，
+想請問接下來該怎麼做才能完成我利用JS登出的目的呢？
+
+https://ithelp.ithome.com.tw/questions/10208786
+cmd  令命 Print 
+
+我 CMD 主控台，輸入以下命令，標籤列印機的燈號有反應閃爍一下，但是沒有資料印出來
+我大概遇到什麼問題了呢?
+print /d:COM1 d:\\c.txt
+
+
+https://ithelp.ithome.com.tw/questions/10208785
+SQL轉JSON字串問題
+
+大家好，小弟想問個SQL轉字串問題
+我有一個TABLE，裡面有如下資料:
+
+我想要將它變成JSON字串，用欄位A去分隔，作成
+[{"A":"1","B":"123"},{"A":"1","B":"123"}]
+[{"A":"2","B":"444"},{"A":"2","B":"1235"}]
+這樣的資料，想問除了FOR JSON AUTO外，還有要下甚麼樣的語法嗎?
+
+https://ithelp.ithome.com.tw/questions/10208784
+關於「GCP Windows Server RDP連線」問題
+
+目前安裝完GCP Windows Server 2019 VM後，透過RDP連線，都會報錯
+規格：
+地區：asia-east1(台灣)
+區域：asia-east1-b
+2vCPU，4GB記憶體
+作業系統：Windows Server 2019 Datacenter for Containers
+Disk：50 GB
+錯誤訊息：
+
+
+未啟用伺服器的遠端存取功能
+遠端電腦已關閉
+遠端電腦不可在網路上使用
+
+
+
+目前查看GCP VM的狀態如下：
+
+
+VM螢幕截圖，可以判斷OS是有正確安裝起來的
+
+(但時區不對，還不清楚如何調整)
+
+
+防火牆也有開RDP Port
+
+
+
+使用Chrome RDP for Google Cloud Platform連線也失敗
+
+因此現階段查看，很大的可能是「1. 未啟用伺服器的遠端存取功能」這個問題，但在沒有Console的狀態下，如果啟用這個功能呢？
+
+https://ithelp.ithome.com.tw/questions/10208783
+(已解決)為啥桌機開機時顯示器有時跳獨顯有時跳內顯害我有時要拔機背的顯示器連接線改接內顯?謝謝所有回應的人!!
+
+為啥桌機開機時顯示器有時跳獨顯有時跳內顯害我有時要拔機背的顯示器連接線改接內顯?謝謝!!
+
+https://ithelp.ithome.com.tw/questions/10208782
+關於office盒裝板的授權
+
+公司office是使用家用及中小企業版2019/2021
+之前安裝了20套左右都沒發生問題
+但這幾天安裝，在安裝完開啟授權輸入微軟帳號密碼後，卻出現error code。連絡微軟工程師後，她要我退出網域後再授權一次，這次成功了，沒有出現error code。
+而我詢問後她回答，有網域的環境要用企業大量授權版，家用及中小企業版是給家用的。
+我又問："中小企業版"，不是因為有商用授權而叫"中小企業版"。
+她答：那是因為"中小企業版"有outlook可以在商用環境使用，所以才叫"中小企業版"。
+搞得我有點混亂，本來公司一直都是用"中小企業版"的，在網域環境安裝都沒問題，而這次出現error code去詢問卻得到這樣的回答。
+請問...到底怎樣才是對的??
+P.S.抱歉!!當時沒有抄下error code，而成功後我也查不到當時code的內容了
+
+https://ithelp.ithome.com.tw/questions/10208781
+Terraform覆蓋問題
+
+假設A,B都自己從頭寫一份Terraform去雲端平台(假設GCP)新增自己的VM
+A先寫完然後Apply上去，現在GCP上有A的VM在上面
+後來B寫Apply自己VM，VM名稱不同
+A,B兩個人用的credential是同一份
+Q1,這樣最後結果會是？
+1. A,B的VM都存在在GCP上
+2. 只有B的VM在GCP上，A的被B的Terraform蓋掉了
+Q2,假設結果是1. 那他是用什麼判斷哪些VM或服務是透過哪份Terraform檔案建置的？
+Q3,假設結果是2. 那在B Apply前，是需要執行什麼Terraform指令才能最終結果是A,B的VM都存在？
+請大家幫忙解惑，謝謝
+
+https://ithelp.ithome.com.tw/questions/10208780
+VMware EXSI 7.0 規劃建議
+
+請問各位前輩
+我有台Server 硬體為 IBM X3605 M5
+硬碟為SAS 1.2T 四顆 做RAID 5
+安裝VMware EXSI
+想請教
+如果上面要四台伺服器
+第一台伺服器 硬碟總規畫空間 1T
+第二台伺服器 硬碟總規畫空間 300G
+第三台伺服器 硬碟總規畫空間 1.1T
+第四台伺服器 硬碟總規畫空間 300G
+這樣規劃 1.2T 四顆 做RAID 5 共3.6T的空間夠用嗎
+上面這四台還需要做快照
+請各位指教 謝謝
+
+https://ithelp.ithome.com.tw/questions/10208779
+鼎新WFGP、EFNET派班中心跳錯ERP_RemoteMethodCall:Subscript out of range
+
+鼎新WFGP、EFNET派班中心跳錯
+主要發現WFGP只要夾帶副檔，按EF簽核就會出錯
+C:\Conductor\S_dsbin已經有更新DMSS路徑了，但還是出錯
+前陣子執行都沒問題
+但昨天一直無法上簽
+無法解決，只好上來問各位大神 。
+感謝各位大神
+
+https://ithelp.ithome.com.tw/questions/10208778
+Python Selenium 用於蝦皮購物找尋元素
+
+請問使用Selenium應用於蝦皮找尋商品選項時，該如何持續偵測，未上架 (如圖反白，不能點選)的商品。
+若發現未開賣的商品未上架時，就刷新頁面，再重新偵測，直到商品上架了，就自動點選該商品，然後再點擊購買。
+我透過Selenium 八種定位方式，仍無法順利偵測，蝦皮的商品選項，都是用class命名，且命名方式相似，點選的商品選項又會不同。
+目前測試結果都是，刷新介面後，就直接點選購買了，並沒有點選到我想要的商品選項，目標是想不停刷新介面，直到商品上架，就點選該商品選項，然後再點擊購買。
+請各位大大幫幫解惑，自學Python所以不是很懂
+以下部份Code
+B = '//*[@id="main"]/div/div[2]/div[1]/div/div[2]/div/div[2]/div[3]/div/div[4]/div/div[3]/div/div[1]/div/button[1]'
+
+while 1:
+    try:
+        buy1 = WebDriverWait(driver,1,0.4).until(EC.presence_of_all_elements_located((By.XPATH, B)))
+        print('成功進入商品頁面')
+        driver.find_element_by_xpath(B).click()
+        print('點擊商品選項-完成')
+        driver.find_element_by_xpath('//*[@id="main"]/div/div[2]/div[1]/div/div[2]/div/div[2]/div[3]/div/div[5]/div/div/button[2]').click()
+        print('點擊直接購買-完成')
+        break 
+        
+     except:
+        print("還不能購買!刷新頁面")
+        driver.refresh()
+
+
+
+https://ithelp.ithome.com.tw/questions/10208777
+swift 怎麼新增UIBarButtonItem 包含title 和 image
+
+最近剛學swift 使用Xcode 的 storyboard 進行開發
+因為網路好像找不到類似的範例，不然就是使用swiftUI 的程式碼
+想請問一下 swift 怎麼新增UIBarButtonItem 包含title 和 image
+//        let buttonIcon = UIImage(named:"icon_infosource")
+        
+        let rightButton = UIBarButtonItem(title: "說明", style: .plain, target: self, action: #selector(UIrightButton))
+//        rightButton.image = buttonIcon
+            // 加到導覽列中
+        self.navigationItem.rightBarButtonItem = rightButton
+
+我住解掉的程式碼是我嘗試先寫title後再新增image,但這樣的話就會只剩image，title'說明'就會不見
+
+https://ithelp.ithome.com.tw/questions/10208776
+網頁啟動外接讀卡機效能問題
+
+專案是金融方面的網站，某個前端功能會需要插入usb讀卡機啟動一個第三方介面(需事先安裝元件)
+流程大概是頁面內按下按鈕 > 呼叫元件 > 開啟元件視窗 > 插入usb讀卡機 > 登入元件 > 開始操作元件上的功能
+這個元件提供一個js檔，裡面有各種api來接收或呼叫相關功能，
+現在的問題是當我啟動這個第三方元件，整個頁面的資源就會被他佔住無法操作，即使是以非同步的方式處理也一樣，猜測因為是在同一個頁面去呼叫這個元件的api，在元件沒結束前都會卡著。
+開啟的介面可以正常操作，直到操作結束關閉元件回傳結果後網頁就會正常。
+頁面需要接收元件傳回的成功或失敗結果並呈現出來
+想請問如何改善效能，例如開啟元件後網頁效能不會被佔住的做法，或是這種功能一般應該怎麼處理比較好，另外專案是以react開發的前後端分離網站，感謝
+
+https://ithelp.ithome.com.tw/questions/10208775
+抓資料庫值錯誤(已解決)
+
+如題，我想從資料庫抓欄位名Grade(int)的值然後回傳，可是卻會error。
+程式碼如下:
+public int login(String userid,String password){
+    String sql = "select Grade from user where ID = ? and Password = ?";
+
+    Connection  con = JDBCUtils.getConn();
+
+    try {
+        PreparedStatement pst=con.prepareStatement(sql);
+
+        pst.setString(1,userid);
+        pst.setString(2,password);
+
+        while (pst.executeQuery().next()){
+            return pst.executeQuery().getInt("Grade");
+        }
+
+    } catch (SQLException throwables) {
+        throwables.printStackTrace();
+    }finally {
+        JDBCUtils.close(con);
+    }
+
+    return -1;
+}
+
+執行
+W/System.err:     at com.example.javaproject.dao.UserDao.login(UserDao.java:26)
+第26行 → return pst.executeQuery().getInt("Grade");
+可是如果把26行改為 return 1 是可以的，表示在資料庫是有抓到值的。
+Grade在資料庫也確實類行為int
+若小弟描述不清或問法有問題，還請各位賜教~
+
+https://ithelp.ithome.com.tw/questions/10208774
+win10桌機安裝usb無線網卡連接wifi印表機印出來都是線條
+
+前輩們好，請問一下這是桌機問題還是網卡問題。
+win10桌機安裝usb無線網卡(slink dwa131)連接wifi印表機(奔騰p2500w)印出來都是線條，有試過win7筆電插同一個usb網卡列印是正常的，手機wifi列印也是正常
+謝謝回覆!!我會按照你們提供的方法試試看
+
+https://ithelp.ithome.com.tw/questions/10208773
+加州理工學院提供的人臉測試資料集，哪邊還可以下載的到?
+
+在此系列學習: [Computer Vision] 電腦視覺下的人臉 系列
+需要下載以下資料
+[加州理工學院提供的人臉測試資料集。從這裡下載CALTECH臉部資料集；解壓縮後，裡面是450張不同人的正面照]
+請問各位先進，哪邊還能下載，感謝
+
+https://ithelp.ithome.com.tw/questions/10208772
+使用Python網路爬蟲輸出CSV時出現I/O operation on closed file.錯誤
+
+我最近在做網路爬蟲，我爬蟲的網址是這個https://www.jkf.net/lady/2021/rank.php
+，我有成功把資料爬下來，但是我要輸出成CSV檔案，卻發生了錯誤，錯誤訊息是
+ValueError: I/O operation on closed file.
+我的程式如下:
+import csv
+import requests
+from bs4 import BeautifulSoup
+ 
+url = 'https://www.jkf.net/lady/2021/rank.php'
+response = requests.get(url=url)
+ 
+soup = BeautifulSoup(response.text, 'lxml')
+
+info_items = soup.find_all('li', 'in_fade')
+
+  
+with open('JKF.csv', 'w', encoding='utf-8', newline='') as csv_file:
+        
+    csv_writer = csv.writer(csv_file)
+    csv_writer.writerow(['號碼', '暱稱', '網址'])
+
+ 
+for item in info_items:
+    
+    num = item.find('div', 'num').text.strip()
+    name = item.find('div', 'tx').text.strip()
+    link =item.find('a').get('href')       
+  
+    csv_writer.writerow([num, name, link])   
+    print('{} {} 網址:{}'.format(num,name,link))
+
+請問到底為什麼會這樣呢?有誰知道的可以幫我解答嗎?謝謝
+
+https://ithelp.ithome.com.tw/questions/10208771
+OpenCart 自動登出功能，可以關掉嗎？
+
+最近遇到網路上的客人明明已經送出訂單，後台管理系卻沒有受到，自己後來嘗試了一下，才發現是因為在網站上閒置太久導致被登出了，但客人卻沒有發現，想詢問各位工程師們有方法可以解決嗎？
+版本是：Version 2.0.3.1
+謝謝大家的協助與回覆。
+
+https://ithelp.ithome.com.tw/questions/10208770
+公司多台電腦開word.excel變慢
+
+各位前輩好：
+公司多台電腦這2週開始從網路下載的word跟excel都開很慢(已下載完成從D槽開)。
+1.嘗試關閉卡巴防毒還是卡，排除防毒問題。
+2.參考微軟官方的解決方式無效https://docs.microsoft.com/en-us/office/troubleshoot/performance/office-slow-or-stop-responding
+已試過可以在word的信任中心取消"針對來自於網際網路的檔案啟用受保護的檢視"，但除了關閉這個功能外還有什麼有效的解決方式呢？
+希望前輩們可以分享，非常感謝。
+系統：win10
+office2019
+office365
+
+
+https://ithelp.ithome.com.tw/questions/10208769
+outlook 2019元件移除後又自動裝回
+
+我的 outlook2019安裝在window10中, 每次使用管理員權限開啟outlook並移除各種元件後, 隔兩三周又會發現元件被裝回去.
+同樣的狀況也發生在開啟附加文件上, 例如已經使用管理員權限開啟outlook, 並設定開啟PDF或jpg檔不需要詢問(取消勾選"每次都要詢問"), 但隔兩三周又會變成每次都要詢問, 然後我又得用管理員權限開啟outlook, 重新取消勾選.
+請問要如何解決這個問題??
+過去兩三年反覆發生一樣的問題, 期間曾重新安裝win10跟office兩次, 都是一直有一樣的問題.
+
+https://ithelp.ithome.com.tw/questions/10208768
+無法註冊百度網盤，但想要下載百度檔案
+
+拜託各位大大，有沒有什麼方法
+
+https://ithelp.ithome.com.tw/questions/10208767
+Android return的問題
+
+大家好，想請問我最近遇到的問題，我在android studio上寫java，為什麼return x的值是0
+而不是我在onResponse回傳的 x = response.body() ，已經確定response.body裡面的值是25
+這邊是函式
+public class GetLong {
+    public static int x;
+    public static int ShopLength(){
+        Retrofit retrofit1 = new Retrofit.Builder()
+                .baseUrl("http://10.25.7.222:62678/")
+                .addConverterFactory(GsonConverterFactory.create())
+                .build();
+        ApiGet3 apiGet3 = retrofit1.create(ApiGet3.class);
+        Call<Integer> call = apiGet3.getTotal();
+        call.enqueue(new Callback<Integer>() {
+            @Override
+            public void onResponse(Call<Integer> call, Response<Integer> response) {
+                x = response.body();
+                Log.d("Length",""+ x); //顯示25
+            }
+            @Override
+            public void onFailure(Call<Integer> call, Throwable t) {
+                Log.d("Length","error:"+t.toString());
+            }
+        });
+        return x; //回傳卻是0
+    }
+    public interface ApiGet3{
+        @GET("api/Commodity/GetTotal")
+        Call<Integer> getTotal();
+    }
+}
+
+我要呼叫ShopLength()，Log的值是0
+public void t1(){
+        int y = ShopLength();
+        Log.d("Y的值",""+y); //顯示0
+    }
+
+麻煩各位大大幫忙解決我的問題
+
+https://ithelp.ithome.com.tw/questions/10208766
+如何在Tableau上將時間上午/下午改成AM/PM
+
+如題 ,我有一串時間軸 ,但都是標示上午下午如下所示
+2022/1/4 下午 05:19:24
+2022/1/18 上午 10:36:41
+想轉換成
+2022/1/4 17:19:24 PM
+2022/1/18 10:36:41 AM
+請問Tableau寫法該如何寫 ,有用過excel寫法但是會出現計算錯誤
+
+https://ithelp.ithome.com.tw/questions/10208765
+內接資料硬碟突然消失
+
+桌機是win10，系統碟有新買一個ssd來使用做c槽，舊的3.5硬碟就改做資料碟d槽使用。
+前幾天開著資料夾檔案…使用中，就突然d槽從本機中消失了⋯⋯去磁碟管理看，顯示動態  不正確 ，點右鍵 匯入外部磁碟是灰色，只有轉換成基本碟跟重啟可以選。
+從開機無用….
+買了一個外接硬碟盒，把他拔下來外接，也搜尋不到?
+請問有什麼方式能救嗎？裡面還蠻多工作資料，不希望遺失，謝謝。
+
+https://ithelp.ithome.com.tw/questions/10208764
+Cpu損壞
+
+是這樣的
+近期上班三天燒了4顆CPU..
+在手法檢驗上同事發現我上CPU前，把power電源關閉了，但未把24pin主機板供電的拔除導致靜電打穿
+那我想詢問
+為何只拔出24pin主機板供電
+而不是拔出24pin主機板供電 和 8pin CPU供電的
+兩個都是供電的 不是都會有靜電嗎？
+
+https://ithelp.ithome.com.tw/questions/10208763
+summernote新增字型
+
+各位好
+我目前遇到一個狀況
+我環境是在opencart3.0.3.7中
+裡面的文字編輯器是用summernote
+我希望可以在這文字編輯器新增其他字型
+有準備好很多ttf
+但網路上查不到完整的字體新增方法
+我看summernote資料夾下有eot、woff等檔案，我也有去作轉檔了
+但實作出來，寫出來沒有反應
+還請版上的各位專家提點一下
+讓我知道有哪些完整的步驟，謝謝
+
+https://ithelp.ithome.com.tw/questions/10208762
+ESP8266-NodeMCU 程式開發
+
+我打算用NodeMCU接上DHT22溫溼度感測器、土壤濕度傳感器、5V的繼電器控制水泵開關，然後把資料用無線網路的方式傳到樹梅派資料庫，可是不曉得是NodeMCU效能不夠還是程式問題出現了一個狀況，就是執行預計每隔5,6秒出來的功能是正常的，可是有時候會變成卡個十幾二十秒沒運作(不知道是不是跑不動，好像有可能是資料遺失沒傳送而導致跳過幾筆資料)，我是用Arduino IDE開發，接線使用杜邦線
+請問有可能是哪裡出問題導致有時候會有延遲?
+還有有時候DHT22回傳的值會怪怪的例如：溫度12度可是濕度會有3000度可能會是甚麼問題?
+NodeMCU程式碼
+#include <ESP8266WiFi.h>
+#include <DHT.h>  
+#define DHTPIN D1  //DHT22感測器 D1
+#define soilPin A0 //土壤溼度感測器A0
+#define motornow D4 //馬達
+#define HOST "192.168.0.16"
+const char* ssid = "myssid";
+const char* password = "mypassword";
+String Motor;
+int soilValue;//存儲中間值
+int soilMoisture;//定義土壤濕度
+
+DHT dht(DHTPIN, DHT22);
+void setup() {
+  Serial.begin(115200);
+  delay(10);
+  Serial.println();
+  Serial.println();
+  Serial.print("Connecting to ");
+  Serial.println(ssid);
+  WiFi.begin(ssid, password);
+  while (WiFi.status() != WL_CONNECTED) {
+    delay(500);
+    Serial.print(".");
+}
+  Serial.println("");
+  Serial.println("WiFi connected");
+  // Print the IP address
+  Serial.print("Your NodeMCU IP is : ");
+  Serial.print(WiFi.localIP());
+}
+void loop() {
+  float t = dht.readTemperature();
+  float h = dht.readHumidity();
+
+  while (isnan(h)){
+    yield();
+    h = dht.readTemperature();
+    //return;
+  }
+  while (isnan(t)){
+    yield();
+    t = dht.readTemperature();
+    //return;
+  }
+  soilValue = analogRead(soilPin); //讀取土壤感測器上的電壓值
+  soilMoisture = map(soilValue,0,1023,100,0);//把電壓值按照[0,1023]映射到[100,0]
+  
+  Serial.println("-------------------");
+  Serial.print("溫度:");
+  Serial.println(t);
+  Serial.print("濕度:");
+  Serial.println(h);
+  Serial.print("土壤濕度: ");
+  Serial.print(soilMoisture);
+  Serial.println("%");
+
+  if (soilValue > 500) {    //抽水馬達控制
+    digitalWrite(motornow, LOW);
+    Motor ="on";
+    Serial.println("Relay is turned on.");
+    } else {
+    digitalWrite(motornow, HIGH);
+    Motor ="off";
+    Serial.println("Relay is turned off.");
+    }
+  
+  delay(1000);
+  WiFiClient client;
+  while(!client.connect(HOST,80)) {
+  Serial.println("connection failed");
+  Serial.println("wait 5 sec...");
+  delay(1000);
+}
+  String dbserver = HOST;
+  String getStr = "GET /AddData.php?";
+  getStr +="Temp=";
+  getStr += String(t);
+  getStr +="&Humidity=";
+  getStr += String(h);
+  getStr +="&Soilhumidity=";
+  getStr += String(soilMoisture);
+  getStr +="Motor=";
+  getStr += String(Motor);
+  getStr += " HTTP/1.1\r\n";
+  getStr += "Host: " + String(dbserver) \
+  + "\r\n"+ "Connection: close\r\n\r\n";
+  client.print(getStr);
+  delay(10);
+  client.stop();
+  delay(5000);
+}
+
+
+https://ithelp.ithome.com.tw/questions/10208761
+TIPTOP ERP系統無法打印條碼
+
+各位大大好，最近使用Genereo Desktop Client這個軟體登入tiptop ERP系統要進行打印條碼會一直跳出這個錯誤訊息，重裝了很多次，也是用最高權限來開啟，還是無法打印。我在其他機器一樣的步驟重新安裝馬上就能直接打印不知道該怎麼排除問題，懇請幫忙
+
+目前大概猜測是缺少某個Adobe的部件還是字型
+
+https://ithelp.ithome.com.tw/questions/10208760
+Line電腦版紀錄誤刪友有辦法還原嗎
+
+我的一個帳號只有登入電腦版沒有登入手機
+對話紀錄被誤刪了有辦法從暫存檔還原嗎？
+拜託各位大神了 真的很重要的紀錄…
+官方回報表示沒辦法…
+
+https://ithelp.ithome.com.tw/questions/10208759
+用雜湊避免註冊不同網站密碼重複可行嗎
+
+有時候在網路上註冊會員
+但密碼太多又不好管理
+所以想到如果我只記一個高強度密碼
+然後每個網站的密碼用下列這方法產生
+會不會有什麼問題？
+
+
+password = toBase64(hmac_sha256(salt=原始密碼, data=網站名稱+日期))
+
+這邊 hmac_sha256 是舉例，可以用其他類似的雜湊方法
+長度太長的話可以截斷
+
+網站名稱+日期 可以記錄，不怕給人看
+
+補個大概的程式碼：https://jsfiddle.net/y6o28c34/
+html
+<label for="pwd-main">主密碼</label>
+<input id="pwd-main" type="password" placeholder="主密碼">
+<table>
+    <thead>
+        <tr>
+            <th>網站</th>
+            <th>長度</th>
+            <th>添加</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>
+                <input type="text" id="site-id">
+            </td>
+            <td>
+                <input type="number" id="pwd-len" value="16">
+            </td>
+            <td>
+                <input type="text" id="pwd-pad">
+            </td>
+            <td>
+                <button id="copy-btn" onclick="copyPassword(-1)">複製</button>
+            </td>
+        </tr>
+    </tbody>
+    <tbody id="site-list"></tbody>
+</table>
+
+javascript
+// config 的內容可以記在紙上或印出來，不怕別人看
+const config = [
+    {
+        data: 'it邦幫忙@2022-05-03',
+        len: 16,
+        pad: ''
+    },
+    {
+        data: '要特殊字元的某站@1977-01-01',
+        len: 12,
+        pad: '@#$^'
+    }
+];
+
+document.querySelector('#site-list').innerHTML = config.map((cfg, idx) => {
+    //其實 len 跟 pad 可以不用顯示
+    return `
+    <tr>
+        <td>${cfg.data}</td>
+        <td>${cfg.len}</td>
+        <td>${cfg.pad}</td>
+        <td><button onclick="copyPassword(${idx})">複製</button></td>
+    </tr>`;
+}).join('');
+
+async function copyPassword(idx) {
+    let salt = document.querySelector('#pwd-main').value;
+    if(salt==='') {
+        alert('主密碼不能為空');
+        return;
+    }
+    if(idx >= 0) {
+        var { data, len, pad } = config[idx];
+    } else {
+        var data = document.querySelector('#site-id').value;
+        var len = document.querySelector('#pwd-len').value;
+        var pad = document.querySelector('#pwd-pad').value;
+    }
+    let hashVal = await getHmacSha512(salt, data);
+    let result = hashVal.slice(0, len) + pad;
+    navigator.clipboard.writeText(result);
+
+    //這邊是測試才把 result 顯示出來
+    alert(`已複製：${result}`);
+}
+
+async function getHmacSha512(salt, data) {
+    let coder = new TextEncoder();
+    data = coder.encode(data);
+    salt = coder.encode(salt);
+    let key=await crypto.subtle.importKey('raw', salt, {
+        name: 'HMAC',
+        hash: 'SHA-512'
+    }, false, ['sign', 'verify']);
+    let buf = await crypto.subtle.sign('HMAC', key, data);
+    let u8arr = new Uint8Array(buf);
+    let s = String.fromCharCode.apply(null, u8arr);
+    return btoa(s);
+}
+
+
+https://ithelp.ithome.com.tw/questions/10208758
+react jsconfig 無法使用Paths
+
+我想問一下路徑，我設定好jsconfig之後，使用自己設定的paths後一直顯示
+Module not found: Error: Can't resolve
+我ctrl按著我設定的路徑是有連結到我要的檔案
+所以想請問一下到底我為什麼不能使用我自己寫的paths
+下面是我設定的jsconfig的code
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "experimentalDecorators": true,
+    "baseUrl": "./",
+    "paths": {
+      "@/*": ["src/*"]
+    }
+  },
+  "exclude": ["node_modules", "dist"]
+}
+
+
+
+https://ithelp.ithome.com.tw/questions/10208757
+JAVASCRIPT-如何送出表單  然後停在原本網頁
+
+各位前輩安安
+我已經找到一個stack overflow的解答  我是採取第一個做法
+其解答連結如下
+https://stackoverflow.com/questions/5733808/submit-form-and-stay-on-same-page
+我已經照做了  結果送出表單之後大概頓了五秒
+之後網頁還是跳轉了...........
+document.querySelector("練習網頁的表單位置").target='frame'
+g=document.createElement('iframe', {'name':'hiddenone'})
+g.className='hiddenone'
+g.name='frame'
+document.querySelector("送出按鈕的位置").setAttribute("value","save")
+
+
+用了這個是有停留幾秒  但我還是想要送出資料但讓網頁停止 不要跳轉
+若是持續用iframe的方法要怎麼修正呢
+
+https://ithelp.ithome.com.tw/questions/10208756
+當 React map() 遇到資料陣列長度不一時，如何避免map()停止？
+
+本人為前端新手，用詞可能不精確，煩請各位大神包容 ><
+----以下正文----
+//這邊我先將資料庫裡的資料用空白鍵切割
+const a = pic_path.split(" ");
+return (
+<a href={/Product/1/${ID}}>
+//再將切割好的字串做為圖片輸出的路徑
+{a.map((r) => (
+<img alt="robot" src={require(../../Assets/ProductImg/${a[2]})} />
+))}
+
+我的圖片最少是一張，最多五張，所以在 ${a[0]} 時會有畫面
+但在 ${a[1]} 時畫面就會消失，
+而如果我在資料庫把圖片只有一張的那個資料新增一張，那在打 ${a[1]} 時也會有畫面，
+所以想請教各位大神，該如何在這種狀態下不論照片資料數量都能map()出來呢？
+謝謝大家><
+
+https://ithelp.ithome.com.tw/questions/10208755
+jsp 登錄頁面跳轉問題
+
+設計登陸頁面後
+想要進行登錄驗證
+但同時又不想跳出登錄驗證的頁面
+如果未輸入資料，將頁面直接重導(Redirect)回登錄頁重新登入。
+如果所輸入資料不符規則，將頁面請求委派(Dispatch)到錯誤訊息頁面。
+如果登錄資料符合規定，則將頁面委派到資料輸入頁開始輸入資料。
+
+
+https://ithelp.ithome.com.tw/questions/10208754
+discord.js 本地运行报错500
+
+C:\Users\Administrator\Desktop\dcboot\node_modules\discord.js\src\rest\RequestHandler.js:201
+        throw new HTTPError(error.message, error.constructor.name, error.status, request);
+              ^
+
+HTTPError [FetchError]: request to https://discord.com/api/v9/gateway/bot failed, reason: read ECONNRESET
+    at RequestHandler.execute (C:\Users\Administrator\Desktop\dcboot\node_modules\discord.js\src\rest\RequestHandler.js:201:15)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async RequestHandler.push (C:\Users\Administrator\Desktop\dcboot\node_modules\discord.js\src\rest\RequestHandler.js:51:14)
+    at async WebSocketManager.connect (C:\Users\Administrator\Desktop\dcboot\node_modules\discord.js\src\client\websocket\WebSocketManager.js:134:9)
+    at async Client.login (C:\Users\Administrator\Desktop\dcboot\node_modules\discord.js\src\client\Client.js:254:7) {
+  code: 500,
+  method: 'get',
+  path: '/gateway/bot',
+  requestData: { json: undefined, files: [] }
+}
+
+
+https://ithelp.ithome.com.tw/questions/10208752
+防火牆fortinet 100關機詢問
+
+萬能的ithome大大們，我想詢問關於防火牆fortinet 100d問題，昨天因為要關機所以就登入到管理頁面，登入後我就按下關機後，發現機器還是無法關機，網路還可以連線，可是後台就無法登入，我有去看一下機器的面板，面板的燈號都還正常亮著，請問這是怎麼回事？前陣子因為需要的關西，我有把fortinet 100d調整，調整的文件如附件
+https://drive.google.com/file/d/1CJl0dULOpLCRH4soBF4rbTKzZPNMzSBc/view?usp=sharing
+
+https://ithelp.ithome.com.tw/questions/10208751
+【LINE BOT測試WEBHOOK
+
+使用VISUAL STUDIO寫LINE BOT
+在LINE DEVELOPER網頁測試WEBHOOK VERIFY
+1.偵錯都會停在if (LineEvent.replyToken == "00000000000000000000000000000000") return Ok();
+2.程式例外狀況說明如下：
+
+想請教有沒有甚麼方式可以正常回覆WEBHOOK的VERIFY？
+非常感謝
+
+https://ithelp.ithome.com.tw/questions/10208750
+VBA 新手學習
+
+完完全全空白紙 應該如何學起?
+
